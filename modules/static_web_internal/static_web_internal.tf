@@ -7,7 +7,7 @@ resource "azurerm_storage_account" "example" {
 
   static_website {
     index_document = var.static_website_internal_index_document
-    #error_404_document = "404.html"
+    error_404_document = var.static_website_internal_index_document
   }
   tags = {
     environment = "dev"
@@ -45,7 +45,7 @@ resource "azurerm_cdn_endpoint" "example" {
 
   origin {
     name      = azurerm_storage_account.example.name
-    host_name = "tr-static-internalstorage.z13.web.core.windows.net"
+    host_name = azurerm_storage_account.example.primary_web_host
     #http_port  = var.cdn_endpoint_partner_portal_http_port
     #https_port = var.cdn_endpoint_partner_portal_https_port
   }

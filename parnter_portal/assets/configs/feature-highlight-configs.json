@@ -1,0 +1,29 @@
+{
+    "patient_status_filter": {
+        "releaseDate": "2022-02-12",
+        "expiresInDays": "30",
+        "message": "FEATURE.PATIENT_STATUS",
+        "disabled": false
+    },
+    "episode_status_filter": {
+        "releaseDate": "2022-02-12",
+        "expiresInDays": "30",
+        "message": "FEATURE.EPISODE_STATUS"
+    },
+    "physician_filter": {
+        "releaseDate": "2022-03-1",
+        "expiresInDays": "30",
+        "message": "FEATURE.PHYSICIAN_FILTER",
+        "disabled": false
+    },
+    "sites_filter": {
+        "releaseDate": "2022-03-01",
+        "expiresInDays": "30",
+        "message": "FEATURE.SITE_FILTER_FEATURE_POPUP_MESSAGE"
+    },
+    "alerts_spotlight": {
+        "releaseDate": "2022-07-27",
+        "expiresInDays": "365",
+        "message": "FEATURE.VITAL_HIGHLIGHT_POPUP_MESSAGE"
+    }
+}

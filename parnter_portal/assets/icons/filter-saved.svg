@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40">
+  <g id="Group_82" data-name="Group 82" transform="translate(2 2)">
+    <g id="Group_81" data-name="Group 81" transform="translate(0 0)">
+      <path id="Icon_feather-filter" data-name="Icon feather-filter" d="M43,4.5H3L19,23.42V36.5l8,4V23.42Z" transform="translate(-3 -4.5)" fill="#a9cc54" stroke="#a9cc54" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    </g>
+    <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M14.919,7.741A7.178,7.178,0,1,1,7.741.562,7.178,7.178,0,0,1,14.919,7.741Zm-8.009,3.8,5.326-5.326a.463.463,0,0,0,0-.655l-.655-.655a.463.463,0,0,0-.655,0L6.583,9.25,4.555,7.222a.463.463,0,0,0-.655,0l-.655.655a.463.463,0,0,0,0,.655l3.01,3.01A.463.463,0,0,0,6.911,11.542Z" transform="translate(26.661 14.732)" fill="#d81b60"/>
+  </g>
+</svg>

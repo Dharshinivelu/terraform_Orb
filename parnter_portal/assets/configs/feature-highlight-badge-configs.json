@@ -1,0 +1,8 @@
+{
+    "patient_status_filter_tab": {
+        "releaseDate": "30/01/2022",
+        "expiresInDays": "30",
+        "message": "FEATURE.PATIENT_STATUS",
+        "enabled": true
+    }
+}

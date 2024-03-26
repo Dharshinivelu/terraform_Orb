@@ -47,7 +47,7 @@ app_settings_Docker_Registry_server_storage = "false"
 app_service_site_config_always_on = "true"
 app_service_identity_type = "SystemAssigned"
 #kubernetes
-#blob_storage
+#partner_portal_static_web
 storage_account_name = "terracooeystorage"
 account_tier = "Standard"
 acc_replication_type = "LRS"
@@ -69,6 +69,7 @@ cdn_profile_partner_portal_sku = "Standard_Microsoft"
 cdn_endpoint_partner_portal_name = "terracdnendpoint"
 cdn_endpoint_partner_portal_http_port = 80
 cdn_endpoint_partner_portal_https_port = 443
+#key_vault
 key_vault_name = "terracooeykeyvault"
 enabled_for_deployment = true
 enabled_for_disk_encryption = true
@@ -90,6 +91,7 @@ log_analytics_workspace_sku  = "PerGB2018"
 log_analytics_retention_in_days = 30
 application_insights_name   = "terra-test-appinsights"
 application_insights_type   = "web"
+#internal_portal
 static_web_internal_storage_account_name = "trstaticinternalstorage"
 static_web_internal_account_tier         = "Standard"
 static_web_internal_account_replication_type = "RAGRS"

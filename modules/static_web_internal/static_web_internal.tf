@@ -46,19 +46,29 @@ resource "azurerm_cdn_endpoint" "example" {
   origin {
     name      = azurerm_storage_account.example.name
     host_name = azurerm_storage_account.example.primary_web_host
-    #http_port  = var.cdn_endpoint_partner_portal_http_port
-    #https_port = var.cdn_endpoint_partner_portal_https_port
+    http_port  = 80
+    https_port = 443
   }
 }
 
+# Update the origin hostname
+resource "azurerm_cdn_endpoint" "example" {
+  name                = azurerm_cdn_endpoint.example.name
+  profile_name        = azurerm_cdn_profile.cdn.name
+  location            = var.resource_group_location
+  resource_group_name = var.resource_group_name
 
-/*resource "azurerm_storage_blob" "example_404" {
-  name                   = "404.html"
-  storage_account_name   = azurerm_storage_account.example.name
-  storage_container_name = azurerm_storage_container.example.name
-  type                   = "Block"
-  source                 = "path/to/your/404.html"
-}*/
+  origin {
+    name                         = azurerm_storage_account.example.name
+    host_name                    = azurerm_storage_account.example.primary_web_endpoint  # New hostname
+    https_port                   = 443
+    http_port                    = 80
+  }
+
+  is_http_allowed            = false
+  is_https_allowed           = true
+  content_types_to_compress  = ["text/html", "text/plain"]
+}
 
 output "storage_account_primary_blob_endpoint" {
   value = azurerm_storage_account.example.primary_blob_endpoint

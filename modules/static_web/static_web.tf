@@ -42,6 +42,7 @@ resource "azurerm_cdn_endpoint" "example" {
   profile_name        = azurerm_cdn_profile.cdn.name
   location            = var.resource_group_location
   resource_group_name = var.resource_group_name
+  origin_host_header = azurerm_storage_account.example.primary_web_host
 
   origin {
     name      = azurerm_storage_account.example.name
